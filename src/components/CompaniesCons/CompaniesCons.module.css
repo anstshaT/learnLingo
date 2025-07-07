@@ -1,0 +1,31 @@
+.div {
+  border: 1.5px dashed #f0aa8d;
+  border-radius: 30px;
+}
+
+.ul {
+  list-style-type: none;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px 123px;
+}
+
+.li {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.statistic {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.explanation {
+  font-weight: 400;
+  font-size: 14px;
+  width: 96px;
+}

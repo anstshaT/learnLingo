@@ -1,0 +1,41 @@
+.div {
+  display: flex;
+  margin-top: 14px;
+  gap: 24px;
+}
+
+.mainText {
+  padding: 98px 64px;
+  background-color: #eeeeee;
+  border-radius: 30px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 48px;
+
+  margin-bottom: 32px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  width: 471px;
+  margin-bottom: 64px;
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 18px;
+
+  border-radius: 12px;
+  padding: 16px 88px;
+  background: #f0aa8d;
+  border: none;
+
+  cursor: pointer;
+}
+
+.img {
+  border-radius: 30px;
+}
