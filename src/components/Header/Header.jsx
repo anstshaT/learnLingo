@@ -4,6 +4,9 @@ import { NavLink } from "react-router";
 import loginSvg from "../../assets/loginBtn.svg";
 
 const Header = () => {
+  const handleLoginClick = () => {
+    console.log("Login clicked");
+  };
   return (
     <div>
       <header className={s.header}>
@@ -29,7 +32,9 @@ const Header = () => {
                 height={20}
               />
             </span>
-            <p className={s.loginText}>Log in</p>
+            <p className={s.loginText} onClick={handleLoginClick}>
+              Log in
+            </p>
           </button>
           <button className={s.registerBtn}>Registration</button>
         </div>

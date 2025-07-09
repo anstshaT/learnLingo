@@ -27,6 +27,12 @@
   font-weight: 400;
   font-size: 16px;
   color: #121417;
+
+  transition: font-weight 225ms linear;
+}
+
+.navLink:hover {
+  font-weight: 500;
 }
 
 .authorization {
@@ -49,6 +55,12 @@
   display: flex;
   align-items: center;
   gap: 5px;
+
+  transition: color 225ms linear;
+}
+
+.loginBtn:hover {
+  color: #f0aa8d;
 }
 
 .registerBtn {
@@ -60,4 +72,12 @@
   padding: 14px 39px;
 
   cursor: pointer;
+  transition: color 225ms linear, border 225ms linear,
+    background-color 225ms linear;
+}
+
+.registerBtn:hover {
+  color: #121417;
+  border: 2px solid #121417;
+  background-color: transparent;
 }

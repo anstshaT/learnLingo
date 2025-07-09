@@ -1,5 +1,6 @@
 import React from "react";
 import s from "./CompaniesCons.module.css";
+import clsx from "clsx";
 
 const CompaniesCons = () => {
   return (
@@ -15,7 +16,7 @@ const CompaniesCons = () => {
         </li>
         <li className={s.li}>
           <p className={s.statistic}>120 +</p>
-          <p className={s.explanation}>Subjects taught</p>
+          <p className={clsx(s.explanation, s.widthSubject)}>Subjects taught</p>
         </li>
         <li className={s.li}>
           <p className={s.statistic}>200 +</p>

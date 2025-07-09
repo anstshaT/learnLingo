@@ -7,6 +7,7 @@ body {
   font-family: Roboto, sans-serif;
   max-width: 1312px;
   margin: 0 auto;
+  letter-spacing: -0.02em;
 }
 
 p,

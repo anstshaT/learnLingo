@@ -9,10 +9,7 @@ const HomeContent = () => {
         <h1 className={s.title}>
           {" "}
           Unlock your potential with the best{" "}
-          <span>
-            language <span></span>
-          </span>{" "}
-          tutors
+          <span className={s.langSpan}>language</span> tutors
         </h1>
         <p className={s.text}>
           Embark on an Exciting Language Journey with Expert Language Tutors:
