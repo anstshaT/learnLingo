@@ -7,6 +7,7 @@ const Header = () => {
   const handleLoginClick = () => {
     console.log("Login clicked");
   };
+
   return (
     <div>
       <header className={s.header}>

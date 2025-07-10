@@ -1,8 +1,10 @@
 import React from "react";
 import s from "./HomeContent.module.css";
 import homePict from "../../assets/home.jpg";
+import { useNavigate } from "react-router";
 
 const HomeContent = () => {
+  const navigate = useNavigate();
   return (
     <div className={s.div}>
       <div className={s.mainText}>
@@ -16,7 +18,14 @@ const HomeContent = () => {
           Elevate your language proficiency to new heights by connecting with
           highly qualified and experienced tutors.
         </p>
-        <button className={s.btn}>Get started</button>
+        <button
+          className={s.btn}
+          onClick={() => {
+            navigate("/teachers");
+          }}
+        >
+          Get started
+        </button>
       </div>
       <img
         src={homePict}
