@@ -1,0 +1,130 @@
+.itemDiv {
+  display: flex;
+  gap: 48px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 24px;
+  width: 1136px;
+}
+
+/* Avatar */
+
+.avatarWrapper {
+  border-radius: 100px;
+  border: 3px solid #f4c8ba;
+  padding: 10px;
+  max-height: 96px;
+  position: relative;
+}
+
+.avatar {
+  border-radius: 100px;
+  display: block;
+  padding: 0;
+}
+
+.activeStatus {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+/* Info about teacher */
+
+.aboutTeacher {
+}
+
+/* Wrappers of all texts */
+
+.topLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 968px;
+  margin-bottom: 8px;
+}
+
+.topLineInfo {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-left: 192px;
+}
+
+.lessonsType {
+  display: flex;
+  gap: 4px;
+}
+
+.rattingWrapper {
+  display: flex;
+  gap: 4px;
+}
+
+.shortDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.langWrapper {
+  display: flex;
+  gap: 4px;
+}
+
+.levelsList {
+  list-style-type: none;
+  display: flex;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+/* Styles for text */
+
+.span {
+  font-weight: 500;
+  font-size: 16px;
+  color: #8a8a89;
+}
+
+.text {
+  font-weight: 500;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.languages {
+  text-decoration: underline;
+}
+
+.price {
+  color: #38cd3e;
+}
+
+.heartBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  margin-left: 64px;
+}
+
+.navLink {
+  font-weight: 500;
+  font-size: 16px;
+  color: #121417;
+}
+
+.levelLi {
+  background-color: #f0aa8d;
+  padding: 8px 12px;
+  border-radius: 35px;
+  font-weight: 500;
+  font-size: 14px;
+}

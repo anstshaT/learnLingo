@@ -1,7 +1,11 @@
-import React from "react";
 import s from "./Header.module.css";
 import { NavLink } from "react-router";
 import loginSvg from "../../assets/loginBtn.svg";
+import clsx from "clsx";
+
+const builderActiveStyle = ({ isActive }) => {
+  return clsx(s.navLink, isActive && s.active);
+};
 
 const Header = () => {
   const handleLoginClick = () => {
@@ -16,10 +20,10 @@ const Header = () => {
           <p className={s.logoText}>LearnLingo</p>
         </div>
         <nav className={s.nav}>
-          <NavLink to="/" className={s.navLink}>
+          <NavLink to="/" className={builderActiveStyle}>
             Home
           </NavLink>
-          <NavLink to="/teachers" className={s.navLink}>
+          <NavLink to="/teachers" className={builderActiveStyle}>
             Teachers
           </NavLink>
         </nav>
