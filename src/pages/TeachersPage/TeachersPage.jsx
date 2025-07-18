@@ -20,6 +20,7 @@ const TeachersPage = () => {
         }));
 
         setTeachers(dataWithId);
+        console.log("All teachers", dataWithId);
       };
 
       getData();

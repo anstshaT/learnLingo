@@ -5,8 +5,11 @@ import heart from "../../assets/heart.svg";
 import activeStatus from "../../assets/active-status.svg";
 import { NavLink, Outlet } from "react-router";
 import clsx from "clsx";
+import { useState } from "react";
 
 const TeacherItem = ({ teacher }) => {
+  const [isClicked, setIsClicked] = useState(false);
+
   if (!teacher) {
     return;
   }
@@ -24,8 +27,6 @@ const TeacherItem = ({ teacher }) => {
     levels,
     id,
   } = teacher;
-
-  console.log("Teacher info", teacher);
 
   return (
     <div className={s.itemDiv}>
@@ -75,7 +76,7 @@ const TeacherItem = ({ teacher }) => {
           <p className={clsx(s.text, s.langWrapper)}>
             <span className={s.span}>Speaks:</span>{" "}
             {languages.map((i) => (
-              <p className={clsx(s.text, s.languages)}>{i}</p>
+              <span className={clsx(s.text, s.languages)}>{i}</span>
             ))}
           </p>
 
@@ -91,15 +92,21 @@ const TeacherItem = ({ teacher }) => {
           </p>
         </div>
 
-        <NavLink to={`/teachers/${id}`} className={s.navLink}>
+        <NavLink
+          to={`/teachers/${id}`}
+          className={s.navLink}
+          onClick={() => setIsClicked(true)}
+        >
           Read more
         </NavLink>
 
-        <ul className={s.levelsList}>
+        <ul className={clsx(s.levelsList, isClicked && s.visuallyHidden)}>
           {levels.map((i) => (
             <li className={s.levelLi}>#{i}</li>
           ))}
         </ul>
+
+        <Outlet />
       </div>
     </div>
   );
